@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+      body {
+        font-family: Helvetica;
+        font-weight: bold;
+        background-color: #97E3F0;
+        font-size: 20px;
+        color: white;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    input {
+        font-size: 20px;
+        background-color: #97E3F0;
+        border-color: gray;
+        padding: 5px;
+        margin-bottom: 15px;
+        font-family: Arial;
+
+      }
+      input:focus {
+
+        background-color: #FFE9FF;
+        border-color: white;
+
+
+      }
+      input:focus::-webkit-input-placeholder {
+        color: #FF69B4;
+        font-family: Garamond;
+        font-size: 20px;
+      }
+    select {
+        font-family: Georgia;
+        font-size: 15px;
+        border-style: hidden;
+        background: #97E3F0;
+
+      }
+
+      .col-1 {
+        margin-top: 10%;
+        float: left;
+        width: 33%;
+        min-width: 300px;
+
+      }
+      .col-2 {
+        margin-top: 10%;
+        float: left;
+        width: 33%;
+        min-width: 300px;
+      }
+      .col-3 {
+        margin-top: 10%;
+        float: left;
+        width: 33%;
+        min-width: 300px;
+      }
+
+      textarea {
+        background-color: #FEFBF7;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+      select {
+        margin-bottom: 20px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+    <div class="col-1">
+      <form>
+        <p>FIRST NAME</p>
+          <input type="text" name="FirstName" placeholder="Jane">
+        <p>LAST NAME</p>
+          <input type="text" name="FirstName" placeholder="Doe">
+        <p> EMAIL ADDRESS </p>
+          <input type="text" name="EmailAddress" placeholder="JaneDoe@lost.com">
+        <p> COUNTRY </p>
+          <select>
+            <option value="s1">United States</option>
+            <option value="s2">United Kingdom</option>
+            <option value="s3">Mali</option>
+            <option value="s4">Japan</option>
+          </select>
+        <p>BIOGRAPHY</p>
+        <textarea rows="10" cols="38" placeholder="Once upon a time..."></textarea>
+      </div>
+      <div class="col-2">
+        <form>
+          <p>PHONE NUMBER</p>
+            <input type="text" name="PhoneNumber" placeholder="202 222 2222">
+          <p>AFFILIATIONS</p>
+          <textarea rows="10" cols="38"></textarea>
+          <p>OCCUPATION</p>
+          <select>
+            <option value="sONE">Badass</option>
+            <option value="sTWO">Personal Chef </option>
+            <option value="sTHREE">Developer</option>
+            <option value="sFOUR">Model</option>
+          </select>
+          <p>CAT'S NAME</p>
+            <input type="text" name="CatName" placeholder="Meryl">
+          <p>FAVORITE GADGET</p>
+              <input type="text" name="FavGadget" placeholder="Tamagotchi">
+        </div>
+        <div class="col-3">
+          <form>
+
+            <p>TYPE OF TALENT</p>
+            <select>
+              <option value="sel1">Juggling</option>
+              <option value="sel2">Magic</option>
+              <option value="sel3">Sky-Diving</option>
+              <option value="sel4">Coding</option>
+            </select>
+            <p>FAVORITE DRINK</p>
+              <input type="text" name="FavDrink" placeholder="O'Doul's">
+            <p>SPECIAL POWER</p>
+              <input type="text" name="SuperPower" placeholder="Levitation">
+              <p>WEAPON OF CHOICE</p>
+                <input type="text" name="Weapon" placeholder="Cutlass">
+              <p>COMMENTS</p>
+              <textarea rows="10" cols="38" placeholder="Forms rock!"></textarea>
+            </form>
+          </div>
+        </div>
+  </body>
+</html>
